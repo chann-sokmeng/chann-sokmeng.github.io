@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wedding Guest</title>
+  <title>Wedding Invitation</title>
 </head>
 <body>
   <h1 id="greeting">Loading...</h1>
@@ -16,8 +16,8 @@
       .then(data => {
         const guestName = data[guestId];
         document.getElementById('greeting').textContent = guestName
-          ? `Welcome, ${guestName}!`
-          : `Guest not found.`;
+          ? `Hey, ${guestName}!`
+          : `bro nich hav c ka`;
       })
       .catch(err => {
         document.getElementById('greeting').textContent = `Error loading guest list.`;
@@ -25,4 +25,5 @@
       });
   </script>
 </body>
+
 </html>
