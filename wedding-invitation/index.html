@@ -16,8 +16,8 @@
       .then(data => {
         const guestName = data[guestId];
         document.getElementById('greeting').textContent = guestName
-          ? `Hey, ${guestName}!`
-          : `bro nich hav c ka`;
+          ? `Hey, ${guestName}! bro nich hav c ka`
+          : `Ot Khernh Chhmous`;
       })
       .catch(err => {
         document.getElementById('greeting').textContent = `Error loading guest list.`;
@@ -27,3 +27,4 @@
 </body>
 
 </html>
+
